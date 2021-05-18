@@ -1,0 +1,20 @@
+#login{
+    background-color: rgba(6, 59, 69, 0.96);
+    
+}
+.bg-overlay{
+    background-image: url(../image/login-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#login .container #login-row #login-column #login-box {
+    margin: 15% auto;
+    max-width: 600px;
+    border: 1px solid  rgba(167, 241, 255, 0.31);
+    background-color: rgba(6, 59, 76, 0.349);
+    
+  }
+  #login .container #login-row #login-column #login-box #login-form {
+    padding: 20px;
+  }
+ 

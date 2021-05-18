@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title> نتائج المباريات </title>
+
+  <!-- Bootstrap core CSS -->
+
+  <link href="css/bootstrap-rtl.css" rel="stylesheet">
+  <link href="css/all.min.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/menu.css" rel="stylesheet">
+  <link href="css/topnewscover.css" rel="stylesheet">
+  <link href="css/search.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <link href="css/matches.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./css/owl.theme.default.css" />
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex w-40 mr-1"><img src="image/logo.png" width="50"></a>
+      <div class=" w-50 d-block d-sm-none float-right mr-5 ">
+        <a class="btn btn-a5bar  float-left" onclick="openSearch()"><i class="fa fa-search float-left"></i></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+        <span class="fa fa-bars"></span>
+      </button>
+      <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+        <ul class="navbar-nav w-100 justify-content-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./news.html">أخبار عالمية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./news.html">مقالات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Match-results.html">نتائج المباريات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Discussions.html">النقاشات</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="./login.html">دخول <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./register.html">تسجيل</a>
+          </li>
+        </ul>
+      </div>
+      <a class="btn btn-a5bar ml-2 d-none d-sm-block" onclick="openSearch()"><i class="fa fa-search float-left"></i></a>
+    </div>
+  </nav>
+  <div id="searchcontent" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <div class="input-group">
+            <input type="search" class="form-control form-control-lg" id="search" placeholder="أدخل كلمة البحث">
+            <div class="input-group-append">
+              <button class="btn bg-primary text-light btn-serach" type="submit">بحث</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- match resulat   -->
+
+  <div class="bg-overlay">
+    <div class="news-cover-bg py-5 text-center">
+      <div class="section-title mt-4 mb-100">
+        <h4>نتائج المباريات</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 mt-4">
+
+        <ul class="list-group  list-group-flush">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active rounded-0" data-toggle="tab" href="#home">المنتخبات</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link rounded-0" data-toggle="tab" href="#menu1">الأندية</a>
+            </li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="home">
+              <li class="list-group-item">1نص عربي</li>
+              <li class="list-group-item">نص عربي</li>
+              <li class="list-group-item">نص عربي</li>
+              <li class="list-group-item">نص عربي</li>
+            </div>
+            <div class="tab-pane  fade" id="menu1">
+              <li class="list-group-item">2نص عربي</li>
+              <li class="list-group-item">نص عربي</li>
+              <li class="list-group-item">نص عربي</li>
+              <li class="list-group-item">نص عربي</li>
+            </div>
+
+          </div>
+
+        </ul>
+        <ul class="list-group my-4">
+          <li class="list-group-item  il-h-a5bar rounded-0">العنوان</li>
+          <li class="list-group-item rounded-0">رابط </li>
+          <li class="list-group-item rounded-0">رابط</li>
+        </ul>
+
+      </div>
+      <div class="col-md-9 mt-4">
+        <div class="card">
+          <div class="card-header text-center il-h-a5bar">
+            عنوان المباراة
+          </div>
+          <div class="card-body">
+
+            <div class="row justify-content-center">
+              <div class='col-4 text-center'>
+                <ul class="list-group no-border ">
+                  <li class="list-group-item m-0 p-0">
+                    <img class='team-icon' src='./image/team1.png' width='64' height='64'>
+                  </li>
+                  <li class="list-group-item m-0 p-0">الفريف الأول</li>
+                  <li class="list-group-item m-0 p-0">1</li>
+                </ul>
+              </div>
+              <div class="col-4  text-center ">
+                <ul class="list-group no-border">
+                  <li class="list-group-item   m-0 p-0">منتهية</li>
+                  <li class="list-group-item  m-0 p-0">2019-7-23</li>
+                  <li class="list-group-item  m-0 p-0">
+
+                    <a href="./Match.html"> التفاصيل </a>
+                  </li>
+
+                </ul>
+              </div>
+              <div class='col-4 no-border text-center'>
+                <ul class="list-group">
+                  <li class="list-group-item m-0 p-0"><img class='team-icon' src='./image/team2.png' width='64'
+                      height='64'></li>
+                  <li class="list-group-item m-0 p-0">الفريف الثاني</li>
+                  <li class="list-group-item m-0 p-0">3</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header text-center il-h-a5bar">
+            عنوان المباراة
+          </div>
+          <div class="card-body">
+
+            <div class="row justify-content-center">
+              <div class='col-4 text-center'>
+                <ul class="list-group no-border ">
+                  <li class="list-group-item m-0 p-0">
+                    <img class='team-icon' src='./image/team1.png' width='64' height='64'>
+                  </li>
+                  <li class="list-group-item m-0 p-0">الفريف الأول</li>
+                  <li class="list-group-item m-0 p-0">1</li>
+                </ul>
+              </div>
+              <div class="col-4  text-center ">
+                <ul class="list-group no-border">
+                  <li class="list-group-item   m-0 p-0">منتهية</li>
+                  <li class="list-group-item  m-0 p-0">2019-7-23</li>
+                  <li class="list-group-item  m-0 p-0">
+
+                    <a href="./Match.html"> التفاصيل </a>
+                  </li>
+
+                </ul>
+              </div>
+              <div class='col-4 no-border text-center'>
+                <ul class="list-group">
+                  <li class="list-group-item m-0 p-0"><img class='team-icon' src='./image/team2.png' width='64'
+                      height='64'></li>
+                  <li class="list-group-item m-0 p-0">الفريف الثاني</li>
+                  <li class="list-group-item m-0 p-0">3</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header text-center il-h-a5bar">
+            عنوان المباراة
+          </div>
+          <div class="card-body">
+
+            <div class="row justify-content-center">
+              <div class='col-4 text-center'>
+                <ul class="list-group no-border ">
+                  <li class="list-group-item m-0 p-0">
+                    <img class='team-icon' src='./image/team1.png' width='64' height='64'>
+                  </li>
+                  <li class="list-group-item m-0 p-0">الفريف الأول</li>
+                  <li class="list-group-item m-0 p-0">1</li>
+                </ul>
+              </div>
+              <div class="col-4  text-center ">
+                <ul class="list-group no-border">
+                  <li class="list-group-item   m-0 p-0">منتهية</li>
+                  <li class="list-group-item  m-0 p-0">2019-7-23</li>
+                  <li class="list-group-item  m-0 p-0">
+
+                    <a href="./Match.html"> التفاصيل </a>
+                  </li>
+
+                </ul>
+              </div>
+              <div class='col-4 no-border text-center'>
+                <ul class="list-group">
+                  <li class="list-group-item m-0 p-0"><img class='team-icon' src='./image/team2.png' width='64'
+                      height='64'></li>
+                  <li class="list-group-item m-0 p-0">الفريف الثاني</li>
+                  <li class="list-group-item m-0 p-0">3</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header text-center il-h-a5bar">
+            عنوان المباراة
+          </div>
+          <div class="card-body">
+
+            <div class="row justify-content-center">
+              <div class='col-4 text-center'>
+                <ul class="list-group no-border ">
+                  <li class="list-group-item m-0 p-0">
+                    <img class='team-icon' src='./image/team1.png' width='64' height='64'>
+                  </li>
+                  <li class="list-group-item m-0 p-0">الفريف الأول</li>
+                  <li class="list-group-item m-0 p-0">1</li>
+                </ul>
+              </div>
+              <div class="col-4  text-center ">
+                <ul class="list-group no-border">
+                  <li class="list-group-item   m-0 p-0">منتهية</li>
+                  <li class="list-group-item  m-0 p-0">2019-7-23</li>
+                  <li class="list-group-item  m-0 p-0">
+
+                    <a href="./Match.html"> التفاصيل </a>
+                  </li>
+
+                </ul>
+              </div>
+              <div class='col-4 no-border text-center'>
+                <ul class="list-group">
+                  <li class="list-group-item m-0 p-0"><img class='team-icon' src='./image/team2.png' width='64'
+                      height='64'></li>
+                  <li class="list-group-item m-0 p-0">الفريف الثاني</li>
+                  <li class="list-group-item m-0 p-0">3</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="mainfooter" role="contentinfo">
+    <div class="footer-middle">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <!--Column1-->
+            <div class="footer-pad">
+              <h4> عنوان</h4>
+              <ul class="list-unstyled">
+                <li><a href="#"></a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <!--Column1-->
+            <div class="footer-pad">
+              <h4> عنوان</h4>
+              <ul class="list-unstyled">
+                <li><a href="#"></a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <!--Column1-->
+            <div class="footer-pad">
+              <h4> عنوان</h4>
+              <ul class="list-unstyled">
+                <li><a href="#"></a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li>
+                  <a href="#"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h4>تابعنا على</h4>
+            <ul class="social-network social-circle">
+              <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#" class="icoYoutube" title="Linkedin"><i class="fab fa-youtube"></i></a></li>
+              <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 copy">
+            <p class="text-center">&copy; كل الحقوق محفوظة لموقع أخبار 2018 - تطوير شركة قيقا تك .</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </footer>
+  <!-- ./Footer -->
+  </div> <!-- /#page-content-wrapper -->
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script> <!-- Menu Toggle Script -->
+  <script src="js/owl.carousel.min.js"></script>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      rtl: true,
+      loop: true,
+      margin: 10,
+      // nav:true,
+      lazyLoad: true,
+      responsive: {
+        0: {
+          items: 2
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+
+
+    /** search open and close script**/
+    function openSearch() {
+      document.getElementById("searchcontent").style.height = "50%";
+    }
+    function closeNav() {
+      document.getElementById("searchcontent").style.height = "0%";
+    }
+    // panle
+    $(document).on('click', '.panel-heading span.clickable', function (e) {
+      var $this = $(this);
+      if (!$this.hasClass('panel-collapsed')) {
+        $this.parents('.panel').find('.panel-body').slideUp();
+        $this.addClass('panel-collapsed');
+        $this.find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+      } else {
+        $this.parents('.panel').find('.panel-body').slideDown();
+        $this.removeClass('panel-collapsed');
+        $this.find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+      }
+    })
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>التسجيل </title>
+
+  <!-- Bootstrap core CSS -->
+
+  <link href="css/bootstrap-rtl.css" rel="stylesheet">
+  <link href="css/all.min.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/menu.css" rel="stylesheet">
+  <link href="css/topnewscover.css" rel="stylesheet">
+  <link href="css/search.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <link href="css/login.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./css/owl.theme.default.css" />
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex w-40 mr-1"><img src="image/logo.png" width="50"></a>
+      <div class=" w-50 d-block d-sm-none float-right mr-5 ">
+        <a class="btn btn-a5bar  float-left" onclick="openSearch()"><i class="fa fa-search float-left"></i></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+        <span class="fa fa-bars"></span>
+      </button>
+      <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+        <ul class="navbar-nav w-100 justify-content-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./news.html">أخبار عالمية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./news.html">مقالات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Match-results.html">نتائج المباريات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Discussions.html">النقاشات</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="./login.html">دخول <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./register.html">تسجيل</a>
+          </li>
+        </ul>
+      </div>
+      <a class="btn btn-a5bar ml-2 d-none d-sm-block" onclick="openSearch()"><i class="fa fa-search float-left"></i></a>
+    </div>
+  </nav>
+  <div id="searchcontent" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <div class="input-group">
+            <input type="search" class="form-control form-control-lg" id="search" placeholder="أدخل كلمة البحث">
+            <div class="input-group-append">
+              <button class="btn bg-primary text-light btn-serach" type="submit">بحث</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- login   -->
+
+  <!------ Include the above in your HEAD tag ---------->
+
+  <body>
+    <div class="bg-overlay">
+      <div id="login">
+        <div class="container">
+          <div id="login-row" class="row justify-content-center align-items-center">
+            <div id="login-column" class="col-md-6">
+              <div id="login-box" class="col-md-12">
+                <form id="login-form" class="form" action="" method="post">
+                  <h4 class="text-center text-light">تسجيل جديد</h4>
+                  <div class="form-group">
+                    <label for="username" class="text-light">اسم المستخدم:</label><br>
+                    <input type="text" name="username" id="username" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="username" class="text-light">البريد الإلكتروني :</label><br>
+                    <input type="email" name="username" id="username" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="password" class="text-light">كلمة المرور:</label><br>
+                    <input type="text" name="password" id="password" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="password" class="text-light">تأكيد كلمة المرور:</label><br>
+                    <input type="text" name="password" id="password" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="remember-me" class="text-light"><span>تذكرني</span> <span><input id="remember-me"
+                          name="remember-me" type="checkbox"></span></label><br>
+                    <button class="btn btn-info btn-block btn-md"> <i></i> دخول</button>
+                  </div>
+                  <div id="register-link" class=" form-group text-center text-light">
+                    لديك حساب مسبقاً ! <a href="./login.html" class="text-info"> دخول</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- Footer -->
+  <footer class="mainfooter" role="contentinfo">
+    <div class="footer-middle">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <!--Column1-->
+            <div class="footer-pad">
+              <h4> عنوان</h4>
+              <ul class="list-unstyled">
+                <li><a href="#"></a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <!--Column1-->
+            <div class="footer-pad">
+              <h4> عنوان</h4>
+              <ul class="list-unstyled">
+                <li><a href="#"></a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <!--Column1-->
+            <div class="footer-pad">
+              <h4> عنوان</h4>
+              <ul class="list-unstyled">
+                <li><a href="#"></a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li>
+                  <a href="#"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h4>تابعنا على</h4>
+            <ul class="social-network social-circle">
+              <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#" class="icoYoutube" title="Linkedin"><i class="fab fa-youtube"></i></a></li>
+              <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 copy">
+            <p class="text-center">&copy; كل الحقوق محفوظة لموقع أخبار 2018 - تطوير شركة قيقا تك .</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </footer>
+  <!-- ./Footer -->
+  </div> <!-- /#page-content-wrapper -->
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script> <!-- Menu Toggle Script -->
+  <script src="js/owl.carousel.min.js"></script>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      rtl: true,
+      loop: true,
+      margin: 10,
+      // nav:true,
+      lazyLoad: true,
+      responsive: {
+        0: {
+          items: 2
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+
+
+    /** search open and close script**/
+    function openSearch() {
+      document.getElementById("searchcontent").style.height = "50%";
+    }
+    function closeNav() {
+      document.getElementById("searchcontent").style.height = "0%";
+    }
+  </script>
+
+
+</body>
+
+</html>

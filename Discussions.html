@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>الرئيسية</title>
+
+  <!-- Bootstrap core CSS -->
+
+  <link href="css/bootstrap-rtl.css" rel="stylesheet">
+  <link href="css/all.min.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/menu.css" rel="stylesheet">
+  <link href="css/topnewscover.css" rel="stylesheet">
+  <link href="css/search.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <link href="css/discussions.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./css/owl.theme.default.css" />
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex w-40 mr-1"><img src="image/logo.png" width="50"></a>
+      <div class=" w-50 d-block d-sm-none float-right mr-5 ">
+        <a class="btn btn-a5bar  float-left" onclick="openSearch()"><i class="fa fa-search float-left"></i></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+        <span class="fa fa-bars"></span>
+      </button>
+      <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+        <ul class="navbar-nav w-100 justify-content-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./news.html">أخبار عالمية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./news.html">مقالات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Match-results.html">نتائج المباريات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Discussions.html">النقاشات</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="./login.html">دخول <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./register.html">تسجيل</a>
+          </li>
+        </ul>
+      </div>
+      <a class="btn btn-a5bar ml-2 d-none d-sm-block" onclick="openSearch()"><i class="fa fa-search float-left"></i></a>
+    </div>
+  </nav>
+  <div id="searchcontent" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <div class="input-group">
+            <input type="search" class="form-control form-control-lg" id="search" placeholder="أدخل كلمة البحث">
+            <div class="input-group-append">
+              <button class="btn bg-primary text-light btn-serach" type="submit">بحث</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="discussionspage">
+    <!-- discussions   -->
+    <div class="container gedf-wrapper">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <div class="h5">@khlid</div>
+              <div class="h7 text-muted"> خالد خضر </div>
+              <div class="h7">مدون سياسي
+              </div>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="h6 text-muted">المتابعين</div>
+                <div class="h5">5.2342</div>
+              </li>
+              <li class="list-group-item">
+                <div class="h6 text-muted">يتابع</div>
+                <div class="h5">6758</div>
+              </li>
+              <li class="list-group-item">رسالتي ان يكون العلم بسلام وأمان</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 gedf-main">
+
+          <!--- \\\\\\\Post-->
+          <div class="card gedf-card">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="posts-tab" data-toggle="tab" href="#posts" role="tab"
+                    aria-controls="posts" aria-selected="true">اضافة نقاش</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="images-tab" data-toggle="tab" role="tab" aria-controls="images"
+                    aria-selected="false" href="#images">الصورة</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="posts" role="tabpanel" aria-labelledby="posts-tab">
+                  <div class="form-group">
+                    <label class="sr-only" for="message">نشر</label>
+                    <input class="form-control my-2" type="text" placeholder="عنوان النقاش">
+                    <textarea class="form-control" id="message" rows="3" placeholder="نص الموضوع ..."></textarea>
+                  </div>
+
+                </div>
+                <div class="tab-pane fade" id="images" role="tabpanel" aria-labelledby="images-tab">
+                  <div class="form-group">
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="customFile">
+                      <label class="custom-file-label" for="customFile">حمل الصورة</label>
+                    </div>
+                  </div>
+                  <div class="py-4"></div>
+                </div>
+              </div>
+              <div class="btn-toolbar justify-content-between">
+                <div class="btn-group">
+                  <button type="submit" class="btn btn-primary">نشر</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- Post /////-->
+
+          <!--- \\\\\\\Post-->
+          <div class="card gedf-card">
+            <div class="card-header">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="mr-2">
+                    <img class="rounded-circle" width="45" src="./image/user.jpg" alt="">
+                  </div>
+                  <div class="ml-2">
+                    <div class="h5 m-0">@aminbha</div>
+                    <div class="h7 text-muted">الأمين بهاء الدين</div>
+                  </div>
+                </div>
+                <div>
+                  <div class="dropdown">
+                    <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-ellipsis-h"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
+                      <div class="h6 dropdown-header">الخيارات</div>
+                      <a class="dropdown-item" href="#">حفظ</a>
+                      <a class="dropdown-item" href="#">إخفاء</a>
+                      <a class="dropdown-item" href="#">إبلاغ</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <img class="img-fluid" src="./image/2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <a class="card-link" href="#">
+                <h5 class="card-title">عنوان النقاش.</h5>
+              </a>
+              <div class="text-muted h7 my-2"> <i class="fa fa-clock-o"></i>منذ ساعة</div>
+
+              <p class="card-text">
+                نص النقاش نص النقاش نص النقاش نص النقاش نص النقاش نص النقاش نص النقاش نص النقاش
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link"><i class="fa fa-gittip"></i> أعجبني</a>
+              <a href="#" class="card-link"><i class="fa fa-comment"></i> تعليق</a>
+              <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> مشاركة</a>
+            </div>
+          </div>
+          <!-- Post /////-->
+
+
+          <!--- \\\\\\\Post-->
+          <div class="card gedf-card">
+            <div class="card-header">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="mr-2">
+                    <img class="rounded-circle" width="45" src="https://picsum.photos/50/50" alt="">
+                  </div>
+                  <div class="ml-2">
+                    <div class="h5 m-0">@ali</div>
+                    <div class="h7 text-muted">على محمد</div>
+                  </div>
+                </div>
+                <div>
+                  <div class="dropdown">
+                    <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-ellipsis-h"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
+                      <div class="h6 dropdown-header">الخيارات</div>
+                      <a class="dropdown-item" href="#">حفظ</a>
+                      <a class="dropdown-item" href="#">إخفاء</a>
+                      <a class="dropdown-item" href="#">إبلاغ</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="card-body">
+              <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i> 10 min ago</div>
+              <a class="card-link" href="#">
+                <h5 class="card-title"> عنوان الموضوع</h5>
+              </a>
+
+              <p class="card-text">
+                نص النقاش نص النقاش نص النقاش نص النقاش نص النقاش نص النقاش نص النقاش نص النقاش
+              </p>
+
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link"><i class="fa fa-gittip"></i> أعجبني</a>
+              <a href="#" class="card-link"><i class="fa fa-comment"></i> تعليق</a>
+              <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> مشاركة</a>
+            </div>
+          </div>
+          <!-- Post /////-->
+
+
+
+        </div>
+        <div class="col-md-3">
+          <div class="card gedf-card">
+            <div class="card-body">
+              <h5 class="card-title">العوان</h5>
+              <h6 class="card-subtitle mb-2 text-muted">عنوان فرعي</h6>
+              <p class="card-text">نص تجريبي عربي </p>
+              <a href="#" class="card-link">رابط</a>
+              <a href="#" class="card-link">رايط</a>
+            </div>
+          </div>
+          <div class="card gedf-card">
+            <div class="card-body">
+              <h5 class="card-title">اخر الأخبار</h5>
+              <h6 class="card-subtitle mb-2 text-muted">الأخبار العالمية</h6>
+              <p class="card-text">
+                نص تجريبي عربي نص تجريبي عربي نص تجريبي عربي نص تجريبي عربي</p>
+              <a href="#" class="card-link">رابط</a>
+              <a href="#" class="card-link">رايط</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="mainfooter" role="contentinfo">
+    <div class="footer-middle">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <!--Column1-->
+            <div class="footer-pad">
+              <h4> عنوان</h4>
+              <ul class="list-unstyled">
+                <li><a href="#"></a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <!--Column1-->
+            <div class="footer-pad">
+              <h4> عنوان</h4>
+              <ul class="list-unstyled">
+                <li><a href="#"></a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <!--Column1-->
+            <div class="footer-pad">
+              <h4> عنوان</h4>
+              <ul class="list-unstyled">
+                <li><a href="#"></a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li>
+                  <a href="#"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h4>تابعنا على</h4>
+            <ul class="social-network social-circle">
+              <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#" class="icoYoutube" title="Linkedin"><i class="fab fa-youtube"></i></a></li>
+              <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 copy">
+            <p class="text-center">&copy; كل الحقوق محفوظة لموقع أخبار 2018 - تطوير شركة قيقا تك .</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </footer>
+  <!-- ./Footer -->
+  </div> <!-- /#page-content-wrapper -->
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script> <!-- Menu Toggle Script -->
+  <script src="js/owl.carousel.min.js"></script>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      rtl: true,
+      loop: true,
+      margin: 10,
+      // nav:true,
+      lazyLoad: true,
+      responsive: {
+        0: {
+          items: 2
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+
+
+    /** search open and close script**/
+    function openSearch() {
+      document.getElementById("searchcontent").style.height = "50%";
+    }
+    function closeNav() {
+      document.getElementById("searchcontent").style.height = "0%";
+    }
+  </script>
+
+
+</body>
+
+</html>

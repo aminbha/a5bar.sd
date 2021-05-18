@@ -1,0 +1,27 @@
+.news-cover-bg{
+    background-color: rgba(6, 59, 69, 0.96);
+    color: #fcfcfc
+}
+.bg-overlay{
+    background-image: url(../image/news.jpg);
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.btn-none-bg{
+    background: hsla(190, 78%, 30%, 0) !important;
+    padding: 0px !important;
+    margin: 0px
+}
+
+.user-comment-img {
+    width: 50px;
+    display: block;
+    margin: 2px auto;
+}
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #117f94;
+    border-color: #117f94;
+}

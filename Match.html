@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title> نتائج المباريات </title>
+
+  <!-- Bootstrap core CSS -->
+
+  <link href="css/bootstrap-rtl.css" rel="stylesheet">
+  <link href="css/all.min.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/menu.css" rel="stylesheet">
+  <link href="css/topnewscover.css" rel="stylesheet">
+  <link href="css/search.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <link href="css/matches.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./css/owl.theme.default.css" />
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex w-40 mr-1"><img src="image/logo.png" width="50"></a>
+      <div class=" w-50 d-block d-sm-none float-right mr-5 ">
+        <a class="btn btn-a5bar  float-left" onclick="openSearch()"><i class="fa fa-search float-left"></i></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+        <span class="fa fa-bars"></span>
+      </button>
+      <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+        <ul class="navbar-nav w-100 justify-content-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./news.html">أخبار عالمية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./news.html">مقالات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Match-results.html">نتائج المباريات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Discussions.html">النقاشات</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="./login.html">دخول <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./register.html">تسجيل</a>
+          </li>
+        </ul>
+      </div>
+      <a class="btn btn-a5bar ml-2 d-none d-sm-block" onclick="openSearch()"><i class="fa fa-search float-left"></i></a>
+    </div>
+  </nav>
+  <div id="searchcontent" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <div class="input-group">
+            <input type="search" class="form-control form-control-lg" id="search" placeholder="أدخل كلمة البحث">
+            <div class="input-group-append">
+              <button class="btn bg-primary text-light btn-serach" type="submit">بحث</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- match resulat   -->
+
+  <div class="bg-overlay">
+    <div class="news-cover-bg py-5 text-center">
+      <div class="card mt-3 no-bk no-border text-light">
+        <div class="card-header text-center">
+          <h3> عنوان المباراة </h3>
+        </div>
+        <div class="card-body">
+          <div class="row justify-content-center">
+            <div class='col-4 text-center'>
+              <ul class="list-group no-border no-bk ">
+                <li class="list-group-item m-0 p-0"><img class='team-icon' src='./image/team1.png' width='64'
+                    height='64'></li>
+                <li class="list-group-item m-0 p-0">الفريف الأول</li>
+                <li class="list-group-item m-0 p-0">1</li>
+              </ul>
+            </div>
+            <div class="col-4  text-center ">
+              <ul class="list-group no-border no-bk">
+                <li class="list-group-item   m-0 p-0">منتهية</li>
+                <li class="list-group-item  m-0 p-0">2019-7-23</li>
+              </ul>
+            </div>
+            <div class='col-4 no-border text-center'>
+              <ul class="list-group">
+                <li class="list-group-item m-0 p-0"><img class='team-icon' src='./image/team2.png' width='64'
+                    height='64'></li>
+                <li class="list-group-item m-0 p-0">الفريف الثاني</li>
+                <li class="list-group-item m-0 p-0">3</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <ul class="nav nav-pills nav-justified">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="pill" href="#home">عنصر</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#menu1">عنصر</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#menu2">عنصر</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content my-4">
+      <div class="tab-pane container active justify-content-center" id="home">
+        <div class="mb-4">
+          <div class="rounded-lg p-5 ">
+            <!-- Progress bar 1 -->
+            <div class="progress mx-auto" data-value='80'>
+              <span class="progress-left">
+                <span class="progress-bar border-primary"></span>
+              </span>
+              <span class="progress-right">
+                <span class="progress-bar border-primary"></span>
+              </span>
+              <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                <div class="h4 font-weight-bold"><sup class="small">الاستحواذ</sup></div>
+              </div>
+            </div>
+            <!-- END -->
+
+            <!-- Demo info -->
+            <div class="row text-center mt-4">
+              <div class="col-6 border-right">
+                <div class="h4 font-weight-bold mb-0">70%</div><span class="small text-gray">الفريف الأول</span>
+              </div>
+              <div class="col-6">
+                <div class="h4 font-weight-bold mb-0">30%</div><span class="small text-gray">الفريق الثاني</span>
+              </div>
+            </div>
+            <!-- END -->
+          </div>
+        </div>
+
+      </div>
+      <div class="tab-pane container fade" id="menu1">
+        <div class="timeline">
+          <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+            <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+              <p> عنوان الحدث عنوان الحدث عنوان الحدث عنوان الحدث عنوان الحدث عنوان الحدث عنوان الحدث عنوان الحدث عنوان
+                الحدث عنوان الحدث عنوان الحدث عنوان الحدث </p>
+            </div>
+            <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+              <img src="image/team1.png" class="img-fluid rounded-circle" alt="img">
+            </div>
+            <div class="col-10 col-md-5 order-1 order-md-3 py-3 text-right timeline-date">
+              <time>00:40</time>
+            </div>
+          </div>
+          <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+            <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+              <p> عنوان الحدث عنوان الحدث عنوان الحدث عنوان الحدث عنوان الحدث عنوان الحدث عنوان الحدث عنوان الحدث عنوان
+                الحدث عنوان الحدث عنوان الحدث عنوان الحدث </p>
+            </div>
+            <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+              <img src="./image/team2.png" class="img-fluid rounded-circle" alt="img">
+            </div>
+            <div class="col-10 col-md-5 order-1 order-md-3 py-3 text-left timeline-date">
+              <time> 00:40</time>
+            </div>
+          </div>
+          <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+            <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+              <p> عنوان الحدث عنوان الحدث عنوان الحدث عنوان الحدث عنوان الحدث عنوان الحدث عنوان الحدث عنوان الحدث عنوان
+                الحدث عنوان الحدث عنوان الحدث عنوان الحدث </p>
+            </div>
+            <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+              <img src="./image/team1.png" class="img-fluid rounded-circle" alt="img">
+            </div>
+            <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+              <time> 00:40</time>
+            </div>
+          </div>
+          <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+            <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+
+              <p> عنوان الحدث عنوان الحدث عنوان الحدث عنوان الحدث عنوان الحدث عنوان الحدث عنوان الحدث عنوان الحدث عنوان
+                الحدث عنوان الحدث عنوان الحدث عنوان الحدث </p>
+            </div>
+            <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+              <img src="./image/team2.png" class="img-fluid rounded-circle" alt="img">
+            </div>
+            <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+              <time> 00:40</time>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane container fade" id="menu2">
+
+        <ul class="nav nav-tabs justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#team1">الفريق الأول</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#team2">الفريق الثاني</a>
+          </li>
+
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div class="tab-pane container active justify-content-center" id="team1">
+            <img src="./image/team-order.jpg" width="80%" class="Lineup" />
+          </div>
+          <div class="tab-pane container fade justify-content-center" id="team2">
+            <img src="./image/team-order.jpg" width="80%" class="Lineup" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="mainfooter" role="contentinfo">
+    <div class="footer-middle">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <!--Column1-->
+            <div class="footer-pad">
+              <h4> عنوان</h4>
+              <ul class="list-unstyled">
+                <li><a href="#"></a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <!--Column1-->
+            <div class="footer-pad">
+              <h4> عنوان</h4>
+              <ul class="list-unstyled">
+                <li><a href="#"></a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <!--Column1-->
+            <div class="footer-pad">
+              <h4> عنوان</h4>
+              <ul class="list-unstyled">
+                <li><a href="#"></a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li><a href="#">رابط</a></li>
+                <li>
+                  <a href="#"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h4>تابعنا على</h4>
+            <ul class="social-network social-circle">
+              <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#" class="icoYoutube" title="Linkedin"><i class="fab fa-youtube"></i></a></li>
+              <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 copy">
+            <p class="text-center">&copy; كل الحقوق محفوظة لموقع أخبار 2018 - تطوير شركة قيقا تك .</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </footer>
+  <!-- ./Footer -->
+  </div> <!-- /#page-content-wrapper -->
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script> <!-- Menu Toggle Script -->
+  <script src="js/owl.carousel.min.js"></script>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      rtl: true,
+      loop: true,
+      margin: 10,
+      // nav:true,
+      lazyLoad: true,
+      responsive: {
+        0: {
+          items: 2
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+
+
+    /** search open and close script**/
+    function openSearch() {
+      document.getElementById("searchcontent").style.height = "50%";
+    }
+    function closeNav() {
+      document.getElementById("searchcontent").style.height = "0%";
+    }
+
+    $(function () {
+
+      $(".progress").each(function () {
+
+        var value = $(this).attr('data-value');
+        var left = $(this).find('.progress-left .progress-bar');
+        var right = $(this).find('.progress-right .progress-bar');
+
+        if (value > 0) {
+          if (value <= 50) {
+            right.css('transform', 'rotate(' + percentageToDegrees(value) + 'deg)')
+          } else {
+            right.css('transform', 'rotate(180deg)')
+            left.css('transform', 'rotate(' + percentageToDegrees(value - 50) + 'deg)')
+          }
+        }
+
+      })
+
+      function percentageToDegrees(percentage) {
+
+        return percentage / 100 * 360
+
+      }
+
+    });
+
+
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+/*!
+ * theme : 5damti
+ * designer aminm bahy
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+ @font-face {
+  font-family: 'HR';
+  src: url(../fonts/AraJozoor-Regular.ttf) format('truetype'),
+       url(../fonts/AraJozoor-Regular.otf)
+}
+@font-face {
+  font-family: 'BR';
+  src: url(../fonts/DroidKufi-Regular.ttf);
+}
+
+ body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+body , :not(i){
+  font-family: 'BR'; 
+}
+/* start of header */
+/* .logo {
+  display: inline-block;
+  margin-left: calc(50% + 5px);
+ transform: translateX(-50%);
+} */
+.btn-sidebar {
+  color: #fff;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  border-radius: 0;
+  z-index: 5;
+}
+a.navbar-brand img {
+  width: 80%;
+}
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+  color: rgb(20, 121, 189);
+}
+
+/* end of header */
+
+
+
+
+/* start of cover */
+.carousel-inner {
+  height: 100vh !important;
+}
+.cover-content {
+    position: absolute;
+    height: 100vh;
+    text-align: center;
+    background: #00355985;
+    display: inline-block;
+    width: 100%;   
+}
+.center-cover{
+  display:block;
+  color:white; 
+  font-size:1em; 
+  text-align:center; 
+  line-height:3em; 
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: calc( 25vh - 25px );
+  width: 80%;
+  height: 100vh;
+}
+.cover-title{
+    color: #f8f9fa;
+}
+.cover-description{
+  color: #e5e5e5
+}
+.center-cover .input-group.mb-3 {
+  width: 80%;
+  margin: 0 auto
+}
+
+.cover-input .input-group input.form-control {
+  padding: 35px;
+  border: 0;
+  border-radius: 0;
+}
+/* end of cover */
+
+
+/* start of  fetuer section */
+.features-section {
+  background: aliceblue;
+  padding: 20px 0px;
+}
+/* enf of fetuer section */
+
+
+/* media edting */
+@media (max-width: 575.98px) { 
+  .w-100 {
+    height: 100vh !important;
+}
+#wrapper.toggled #sidebar-wrapper {
+  margin-right: -15rem;
+}
+#sidebar-wrapper {
+  margin-top: 55px;
+}
+ }
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+  .center-cover .input-group.mb-3 {
+    width: 100%;
+    margin: 0 auto;
+}
+  .cover-input .input-group input.form-control {
+    padding: 20px;}
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+  .logo{
+    display: inline-block;
+    position: absolute;
+    padding: 35px;
+   }
+ }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .w-100 {
+    width: 200vh !important;
+}
+  }
